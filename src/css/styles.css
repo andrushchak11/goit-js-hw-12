@@ -80,6 +80,7 @@ ol {
   font-weight: bold;
   color: #555;
   text-align: center;
+  justify-content: center;
   margin-top: 32px;
   margin-bottom: 32px;
   animation: blink 1.5s infinite;
@@ -96,7 +97,7 @@ ol {
 }
 
 .container {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
 }
 
@@ -159,4 +160,8 @@ ol {
   letter-spacing: 0.04em;
   color: #fff;
   transition: 250ms;
+}
+
+.load-more:hover {
+  background-color: #6c8cff;
 }

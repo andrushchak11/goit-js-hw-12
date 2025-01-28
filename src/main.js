@@ -89,7 +89,7 @@ async function onLoadMore() {
   loader.style.display = 'flex';
 
   try {
-    const data = await creatingRequestPhoto(question, page);
+    const data = await serviceImages(question, page);
 
     if (data.hits.length === 0) {
       iziToast.info({
@@ -102,7 +102,7 @@ async function onLoadMore() {
       return;
     }
 
-    gallery.insertAdjacentHTML('beforeend', creatGalleryCard(data.hits));
+    gallery.insertAdjacentHTML('beforeend', creatGallery(data.hits));
     galleryModal.refresh();
     loader.style.display = 'none';
 
