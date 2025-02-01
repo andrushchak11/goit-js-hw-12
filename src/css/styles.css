@@ -84,6 +84,7 @@ ol {
   margin-top: 32px;
   margin-bottom: 32px;
   animation: blink 1.5s infinite;
+  display: none;
 }
 
 @keyframes blink {

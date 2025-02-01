@@ -130,6 +130,7 @@ async function onLoadMore() {
       position: 'topRight',
     });
   } finally {
+    loader.style.display = 'none';
     btnMore.disabled = false;
   }
 }
